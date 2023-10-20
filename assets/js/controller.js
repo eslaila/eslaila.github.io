@@ -142,6 +142,9 @@ sendMail()
 })
 function sendMail() {
     /* console.log("called") */
+    (function(){
+	    emailjs.init("Ku_iId8l3OrA7_FHY");
+    })()
     var params = {
       name: document.getElementById("name").value,
       sender: document.getElementById("email").value,
